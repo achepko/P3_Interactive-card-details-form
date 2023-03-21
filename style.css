@@ -1,8 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
     height: 100vh;
 }
 .left{
-    /*background-image: url("bg-main-desktop.png");*/
+    background-image: url(images/bg-main-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.card{
+    position: absolute;
+    top: 25%;
+    /*right: -100px;*/
+    left: 17vw;
+    row-gap: 35px;
+    display: grid;
+}
+.card-front{
+    position: relative;
+}
+img{
+    min-width: 100%;
+    display: block;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+span.absolute{
+    color: white;
+    position: absolute;
+}
+.card-logo{
+    top: 28px;
+    left: 32px;
+}
+.card-num{
+    font-size: 28px;
+    top: 50%;
+    left: 32px;
+    letter-spacing: 3.6px;
+    height: 36px;
+}
+.card-name{
+    top: 200px;
+    left: 32px;
+}
+.card-date{
+    top: 200px;
+    right: 26px;
+}
+.card-back{
+    position: relative;
+}
+.card-cvc{
+    top: 108px;
+    right: 57px;
+    letter-spacing: 3px;
+}
+img{
+    min-width: 100%;
+    display: block;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.right{
+    margin-left: 15%;
 }
