@@ -35,9 +35,11 @@ body {
     left: 17vw;
     row-gap: 35px;
     display: grid;
+
 }
 .card-front{
     position: relative;
+    right: 100px;
 }
 img{
     min-width: 100%;
@@ -94,9 +96,11 @@ input {
     border: 1px solid #eee;
     border-radius: 5px;
 }
-.name-div,.num-div,.data-cvc-div {
-    display: flex;
-    flex-direction: column;
+input, button, textarea, select {
+    font: inherit;
+}
+form>div {
+    display: grid;
     width: 100%;
     row-gap: 10px;
     margin-bottom: 10px;
@@ -105,4 +109,29 @@ input {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+
+}
+.data-cvc-div input{
+    width: 80px;
+    margin-block: 10px;
+}
+.date-div{
+    display:block;
+}
+.cvc-div{
+    display: flex;
+    flex-direction: column;
+}
+.confirm {
+    width: 100%;
+    padding: 10px 15px;
+    background-color:#210930;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
