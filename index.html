@@ -8,6 +8,7 @@
     <title>Card details form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon" >
 </head>
 <body>
 
@@ -21,9 +22,9 @@
                 <span class="card-num absolute">0000 0000 0000 0000</span>
                 <span class="card-name absolute">Jane Appleseed</span>
                 <span class="card-date absolute">
-                <span>00</span>
+                <span class="card-month">00</span>
                 /
-                <span>00</span>
+                <span class="card-year">00</span>
                 </span>
             </div>
             <div class="card-back">
@@ -54,13 +55,18 @@
                     </div>
                     <div class="cvc-div">
                         <label for="cvc">CVC</label>
-                        <input type="number" id="cvc" name="cvc" placeholder="e.g. 123">
+                        <input type="text" id="cvc" name="cvc" placeholder="e.g. 123" maxlength="3">
                     </div>
                 </div>
                 <button class="confirm">Confirm</button>
             </form>
         </div>
-        <div class="thankYou"></div>
+        <div class="thanks none" >
+            <img src="images/icon-complete.svg" alt="complete icon">
+            <h2>Thank you!</h2>
+            <p>We've added your card details</p>
+            <button id="cont">Continue</button>
+        </div>
     </div>
 </div>
 
