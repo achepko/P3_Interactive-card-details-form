@@ -25,4 +25,7 @@
         width: 90vw;
         transform: scale(0.9);
     }
+    .formBlock{
+        width: 100%;
+    }
 }
