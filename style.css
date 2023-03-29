@@ -112,18 +112,25 @@ form>div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    position: static;
 
 }
 .data-cvc-div input{
     width: 80px;
-    margin-block: 10px;
+    /*margin-block: 10px;*/
+    /*row-gap: 10px;*/
 }
 .date-div{
     display:block;
+    position: relative;
 }
 .cvc-div{
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+.cvc-div input,.date-div input{
+    margin-top: 10px;
 }
 .confirm {
     width: 100%;
@@ -137,17 +144,22 @@ form>div {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    cursor: pointer;
 }
 .none {
     display: none !important;
 }
-.error {
+.error,.error2 {
     color:red;
     font-size: 12px;
     width: 100%;
     position: absolute;
     bottom: -20px;
 }
+.date-div .error,.error2{
+    left: 0px;
+}
+
 .error.grid {
     grid-area: 3 / 1 / 4 / 3;
 }
@@ -176,6 +188,7 @@ form>div {
     border-radius: 10px;
     background-color: #21092f;
     color: white;
+    cursor: pointer;
 }
 .thanks img{
     min-width: 80px;
