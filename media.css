@@ -28,4 +28,14 @@
     .formBlock{
         width: 100%;
     }
+    .date-div{
+        display: grid;
+        grid-template-columns:80px 80px;
+        column-gap: 5px;
+        grid-template-rows: auto 1fr;
+    }
+    .date-div label{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }

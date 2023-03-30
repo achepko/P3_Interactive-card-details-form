@@ -5,6 +5,7 @@ let monthInput = document.querySelector("#month");
 let yearInput = document.querySelector("#year");
 let cvcInput = document.querySelector("#cvc");
 let allInputs = document.querySelectorAll(".formBlock input");
+
 const cardname = document.querySelector(".card-name");
 const cardnum = document.querySelector(".card-num");
 let carddate = document.querySelector(".card-date");
@@ -20,13 +21,10 @@ const cvcDiv = document.querySelector(".cvc-div")
 
 let errorSpan = document.createElement("span")
 errorSpan.classList.add("error");
-
+let errorBlank = document.querySelector('.error2');
 
 const confirmBtn = document.querySelector(".confirm");
 const contBtn = document.querySelector("#cont");
-// \\\\\\\\\\\\\\\\\\\\\\
-console.log(allInputs);
-let errorBlank = document.querySelector('.error2');
 
 nameInput.addEventListener("keyup", (e) => {
     nameDiv.appendChild(errorSpan);
@@ -74,11 +72,9 @@ numInput.addEventListener("keyup", (e) => {
 })
 monthInput.addEventListener('keyup', (e) => {
     validater(monthInput);
-
     function validater(input) {
         input.value = input.value.replace(/\D/g, '');
     }
-
     dateDiv.appendChild(errorSpan);
     if (monthInput.value.length === 0) {
         cardmonth.innerHTML = '00';
@@ -97,11 +93,9 @@ monthInput.addEventListener('keyup', (e) => {
 })
 yearInput.addEventListener('keyup', (e) => {
     validater(yearInput);
-
     function validater(input) {
         input.value = input.value.replace(/\D/g, '');
     }
-
     dateDiv.appendChild(errorSpan);
     let currentYear = new Date().getFullYear() - 2000;
     if (yearInput.value.length === 0) {
@@ -126,11 +120,9 @@ yearInput.addEventListener('keyup', (e) => {
 })
 cvcInput.addEventListener('keyup', (e) => {
     validater(cvcInput);
-
     function validater(input) {
         input.value = input.value.replace(/\D/g, '');
     }
-
     let regex = /^[0-9]+$/g
     cvcDiv.appendChild(errorSpan);
     if (cvcInput.value.length === 0) {
@@ -148,13 +140,11 @@ cvcInput.addEventListener('keyup', (e) => {
         }
     }
 })
-
 confirmBtn.addEventListener('click', (e) => {
     e.preventDefault();
     if (nameInput.value !== '' && numInput.value !== '' && monthInput.value !== '' && yearInput.value !== '' && cvcInput.value !== '') {
         thanksDiv.classList.remove('none');
         form.classList.add('none');
-
     } else {
         allInputs.forEach((item) => {
             if (item.value === '') {
@@ -173,9 +163,6 @@ confirmBtn.addEventListener('click', (e) => {
         })
     }
 })
-// && (item.style.border = '1px solid red')
-// NodeList(5) [input#name, input#number, input#month, input#year, input#cvc]
-
 contBtn.addEventListener('click', (e) => {
     form.reset();
     cardname.innerText = "Jane Appleseed"
@@ -190,55 +177,3 @@ contBtn.addEventListener('click', (e) => {
     yearInput.style.border = '1px solid #eee'
     cvcInput.style.border = '1px solid #eee'
 })
-//
-// if (nameInput.value === '') {
-//     nameDiv.appendChild(errorSpan);
-//     errorSpan.innerText = "Can't be blank"
-//     nameInput.focus();
-// }
-// if (numInput.value === '') {
-//     numDiv.appendChild(errorSpan);
-//     errorSpan.innerText = "Can't be blank"
-//     numInput.focus();
-// }
-// if (monthInput.value === '') {
-//     dateDiv.appendChild(errorSpan);
-//     errorSpan.innerHTML = `<div>Can't be blank</div>`;
-//     monthInput.focus();
-// }
-// if (yearInput.value === '') {
-//     dateDiv.appendChild(errorSpan);
-//     errorSpan.innerHTML = `<div>Can't be blank</div>`;
-//     yearInput.focus();
-// }
-// if (cvcInput.value === '') {
-//     cvcDiv.appendChild(errorSpan);
-//     errorSpan.innerText = "Can't be blank";
-//     cvcInput.focus();
-// }
-
-
-// nameInput.value === "" ? ( errorSpan.innerText = "sadfsf" && (numInput.style.border = '1px solid red')) :
-//     (numInput.value === "" && (numInput.focus() && (numInput.style.border = '1px solid red')));
-
-
-// nameInput.value === "" ? (nameInput.focus() && (numInput.style.border = '1px solid red')):
-//     (numInput.value == "" ? (numInput.focus() && (numInput.style.border = '1px solid red'))):
-// (monthInput.value == "" ?(monthInput.focus() && (monthInput.style.border = '1px solid red'))) :
-// yearInput.value == "" ? (yearInput.focus() && (yearInput.style.border = '1px solid red')) :
-// (cvcInput.focus() && (cvcInput.style.border = '1px solid red'))
-
-
-// allInputs.forEach((item) => {
-//     // item.appendChild(errorSpan);
-//     item.style.border = '1px solid red'
-//     errorSpan.innerHTML = "Can't be blank"
-// }
-// )
-
-
-// item.id === 'name' ? nameDiv.span.innerHTML = "Can't be blank" :
-// item.id === 'number' ?numDiv.span.innerHTML = "Can't be blank" :
-// item.id === 'month' ? dateDiv.span.innerHTML = "Can't be blank" :
-// item.id === 'year' ? dateDiv.span.innerHTML = "Can't be blank" :
-//     cvcDiv.span.innerHTML = "Can't be blank";

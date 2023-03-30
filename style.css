@@ -31,7 +31,6 @@ body {
 .card{
     position: absolute;
     top: 25%;
-    /*right: -100px;*/
     left: 17vw;
     row-gap: 35px;
     display: grid;
@@ -117,8 +116,6 @@ form>div {
 }
 .data-cvc-div input{
     width: 80px;
-    /*margin-block: 10px;*/
-    /*row-gap: 10px;*/
 }
 .date-div{
     display:block;
