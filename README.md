@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive card form solution
 
-This is a solution to the [QR code component solution challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).
+This is a solution to the [Interactive card form solution challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).
 
 ## Table of contents
 
