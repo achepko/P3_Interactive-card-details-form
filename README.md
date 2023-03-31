@@ -1,10 +1,10 @@
 # Frontend Mentor - Interactive card form solution
 
-This is a solution to the [QR code component solution challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
+This is a solution to the [QR code component solution challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).
 
 ## Table of contents
 
-- [Frontend Mentor - QR code component solution](#frontend-mentor---qr-code-component-solution)
+- [Frontend Mentor - Interactive card form solution](#frontend-mentor---interactive-card-form-solution-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/achepko/P2_QR-code-component)
-- Live Site URL: [Live](https://achepko.github.io/P2_QR-code-component/)
+- Solution URL: [Solution](https://github.com/achepko/P3_Interactive-card-details-form)
+- Live Site URL: [Live](https://achepko.github.io/P3_Interactive-card-details-form/)
 
 ## My process
 
