@@ -43,6 +43,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - IntelliJ IDEA 2022.3
+- JavaScript
 
 ### Useful resources
 
