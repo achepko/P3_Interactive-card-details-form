@@ -28,6 +28,7 @@ Users should be able to:
 ### Screenshot
 
 ![](screenshots/product-prev-desktop-screen.png)
+![](screenshots/product-prev-desktop-active-screen.png)
 ![](screenshots/product-prev-mobile-screen.png)
 
 ### Links
